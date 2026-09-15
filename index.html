@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BIG BANG — Technology, creativity and innovation.">
   <meta name="theme-color" content="#07070b">
-  <title>BIG BANG — Create What's Next</title>
+  <title data-i18n="title">BIG BANG — Create What's Next</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,11 +23,12 @@
     </a>
 
     <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact" class="nav-cta">Contact <span>↗</span></a>
+      <a class="active" href="#home" data-i18n="nav_home">Home</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#contact" class="nav-cta"><span data-i18n="nav_contact">Contact</span> <span>↗</span></a>
+      <button class="lang-toggle" type="button" id="langToggle" aria-label="Switch to Persian language">FA</button>
     </nav>
 
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -38,21 +39,21 @@
   <main id="home">
     <section class="hero section">
       <div class="hero-copy reveal">
-        <div class="hero-kicker"><span class="pulse-dot"></span><span>THE NEXT CHAPTER STARTS NOW</span></div>
-        <h1>We create<br><em>what's next.</em></h1>
-        <p class="hero-text">BIG BANG combines technology, creativity and bold ideas to build digital experiences that move businesses forward.</p>
+        <div class="hero-kicker"><span class="pulse-dot"></span><span data-i18n="hero_kicker">THE NEXT CHAPTER STARTS NOW</span></div>
+        <h1 data-i18n="hero_title">We create<br><em>what's next.</em></h1>
+        <p class="hero-text" data-i18n="hero_text">BIG BANG combines technology, creativity and bold ideas to build digital experiences that move businesses forward.</p>
         <div class="hero-actions">
-          <a href="#services" class="button primary">Explore BIG BANG <span>↗</span></a>
-          <a href="#projects" class="button ghost">View projects</a>
+          <a href="#services" class="button primary"><span data-i18n="hero_btn1">Explore BIG BANG</span> <span>↗</span></a>
+          <a href="#projects" class="button ghost" data-i18n="hero_btn2">View projects</a>
         </div>
         <div class="hero-meta">
-          <span>TECHNOLOGY</span><i></i><span>CREATIVITY</span><i></i><span>INNOVATION</span>
+          <span data-i18n="meta_tech">TECHNOLOGY</span><i></i><span data-i18n="meta_creative">CREATIVITY</span><i></i><span data-i18n="meta_innovation">INNOVATION</span>
         </div>
       </div>
 
       <div class="hero-visual reveal" aria-hidden="true">
-        <div class="visual-label label-top">01 / VISION</div>
-        <div class="visual-label label-bottom">EST. <b>2026</b></div>
+        <div class="visual-label label-top" data-i18n="vision">01 / VISION</div>
+        <div class="visual-label label-bottom"><span data-i18n="est">EST.</span> <b>2026</b></div>
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
         <div class="orbit orbit-three"></div>
@@ -68,29 +69,29 @@
         <div class="floating-tag tag-three">INNOVATE</div>
       </div>
 
-      <a class="scroll-cue" href="#about"><span>Scroll to explore</span><b>↓</b></a>
+      <a class="scroll-cue" href="#about"><span data-i18n="scroll">Scroll to explore</span><b>↓</b></a>
     </section>
 
     <section id="about" class="section about">
       <div class="section-heading reveal">
         <div class="section-index">01</div>
         <div>
-          <p class="eyebrow">WHO WE ARE</p>
-          <h2>Small spark.<br><em>Big impact.</em></h2>
+          <p class="eyebrow" data-i18n="who">WHO WE ARE</p>
+          <h2 data-i18n="about_title">Small spark.<br><em>Big impact.</em></h2>
         </div>
       </div>
       <div class="about-content">
-        <p class="lead reveal">We are a forward-thinking company focused on turning ambitious ideas into useful, beautiful and memorable digital products.</p>
+        <p class="lead reveal" data-i18n="about_lead">We are a forward-thinking company focused on turning ambitious ideas into useful, beautiful and memorable digital products.</p>
         <div class="about-side reveal">
-          <p>We believe great digital work lives where <strong>clear thinking</strong>, <strong>technology</strong> and <strong>imagination</strong> meet.</p>
-          <a class="text-link" href="#contact">Start a conversation <span>↗</span></a>
+          <p data-i18n="about_side">We believe great digital work lives where <strong>clear thinking</strong>, <strong>technology</strong> and <strong>imagination</strong> meet.</p>
+          <a class="text-link" href="#contact"><span data-i18n="start_chat">Start a conversation</span> <span>↗</span></a>
         </div>
       </div>
       <div class="stats reveal">
-        <div class="stat"><strong data-count="10">0</strong><span>Projects</span></div>
-        <div class="stat"><strong data-count="5">0</strong><span>Years experience</span></div>
-        <div class="stat"><strong data-count="20">0</strong><span>Creative minds</span></div>
-        <div class="stat"><strong data-count="98">0</strong><span>% satisfaction</span></div>
+        <div class="stat"><strong data-count="10">0</strong><span data-i18n="stat_projects">Projects</span></div>
+        <div class="stat"><strong data-count="5">0</strong><span data-i18n="stat_years">Years experience</span></div>
+        <div class="stat"><strong data-count="20">0</strong><span data-i18n="stat_minds">Creative minds</span></div>
+        <div class="stat"><strong data-count="98">0</strong><span data-i18n="stat_sat">% satisfaction</span></div>
       </div>
     </section>
 
@@ -98,31 +99,31 @@
       <div class="section-heading reveal">
         <div class="section-index">02</div>
         <div>
-          <p class="eyebrow">WHAT WE DO</p>
-          <h2>Ideas into<br><em>reality.</em></h2>
+          <p class="eyebrow" data-i18n="what">WHAT WE DO</p>
+          <h2 data-i18n="services_title">Ideas into<br><em>reality.</em></h2>
         </div>
       </div>
 
       <div class="service-grid">
         <article class="service-card reveal">
           <div class="card-top"><span>01</span><span class="service-icon">⌘</span></div>
-          <div class="card-body"><h3>Technology</h3><p>Smart software, modern websites and digital solutions designed around real needs.</p></div>
-          <a href="#contact" class="card-link">Discover <span>↗</span></a>
+          <div class="card-body"><h3 data-i18n="svc_tech_title">Technology</h3><p data-i18n="svc_tech_text">Smart software, modern websites and digital solutions designed around real needs.</p></div>
+          <a href="#contact" class="card-link"><span data-i18n="discover">Discover</span> <span>↗</span></a>
         </article>
         <article class="service-card reveal">
           <div class="card-top"><span>02</span><span class="service-icon">✦</span></div>
-          <div class="card-body"><h3>Creative</h3><p>Brand identities and visual experiences that make ideas impossible to ignore.</p></div>
-          <a href="#contact" class="card-link">Discover <span>↗</span></a>
+          <div class="card-body"><h3 data-i18n="svc_creative_title">Creative</h3><p data-i18n="svc_creative_text">Brand identities and visual experiences that make ideas impossible to ignore.</p></div>
+          <a href="#contact" class="card-link"><span data-i18n="discover">Discover</span> <span>↗</span></a>
         </article>
         <article class="service-card reveal">
           <div class="card-top"><span>03</span><span class="service-icon">◌</span></div>
-          <div class="card-body"><h3>Digital</h3><p>Digital strategies that connect brands with people and turn attention into action.</p></div>
-          <a href="#contact" class="card-link">Discover <span>↗</span></a>
+          <div class="card-body"><h3 data-i18n="svc_digital_title">Digital</h3><p data-i18n="svc_digital_text">Digital strategies that connect brands with people and turn attention into action.</p></div>
+          <a href="#contact" class="card-link"><span data-i18n="discover">Discover</span> <span>↗</span></a>
         </article>
         <article class="service-card reveal">
           <div class="card-top"><span>04</span><span class="service-icon">∞</span></div>
-          <div class="card-body"><h3>Innovation</h3><p>Experimental thinking for ambitious products, concepts and new opportunities.</p></div>
-          <a href="#contact" class="card-link">Discover <span>↗</span></a>
+          <div class="card-body"><h3 data-i18n="svc_innovation_title">Innovation</h3><p data-i18n="svc_innovation_text">Experimental thinking for ambitious products, concepts and new opportunities.</p></div>
+          <a href="#contact" class="card-link"><span data-i18n="discover">Discover</span> <span>↗</span></a>
         </article>
       </div>
     </section>
@@ -131,23 +132,23 @@
       <div class="section-heading reveal">
         <div class="section-index">03</div>
         <div>
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>Built to<br><em>stand out.</em></h2>
+          <p class="eyebrow" data-i18n="selected">SELECTED WORK</p>
+          <h2 data-i18n="projects_title">Built to<br><em>stand out.</em></h2>
         </div>
       </div>
 
       <div class="project-list">
         <article class="project-card project-a reveal">
           <div class="project-art"><div class="project-orb"></div><span class="art-number">01</span></div>
-          <div class="project-info"><p>01 / DIGITAL EXPERIENCE</p><h3>Project Alpha</h3><span>Branding · UX · Development</span><a href="#contact" class="text-link">View concept <span>↗</span></a></div>
+          <div class="project-info"><p data-i18n="proj_a_type">01 / DIGITAL EXPERIENCE</p><h3 data-i18n="proj_a_title">Project Alpha</h3><span data-i18n="proj_a_meta">Branding · UX · Development</span><a href="#contact" class="text-link"><span data-i18n="view_concept">View concept</span> <span>↗</span></a></div>
         </article>
         <article class="project-card project-b reveal">
           <div class="project-art"><div class="project-grid"></div><span class="art-number">02</span></div>
-          <div class="project-info"><p>02 / SMART TECHNOLOGY</p><h3>Project Nova</h3><span>Strategy · Product · Technology</span><a href="#contact" class="text-link">View concept <span>↗</span></a></div>
+          <div class="project-info"><p data-i18n="proj_b_type">02 / SMART TECHNOLOGY</p><h3 data-i18n="proj_b_title">Project Nova</h3><span data-i18n="proj_b_meta">Strategy · Product · Technology</span><a href="#contact" class="text-link"><span data-i18n="view_concept">View concept</span> <span>↗</span></a></div>
         </article>
         <article class="project-card project-c reveal">
           <div class="project-art"><div class="project-wave"></div><span class="art-number">03</span></div>
-          <div class="project-info"><p>03 / CREATIVE PLATFORM</p><h3>Project Orbit</h3><span>Identity · Design · Digital</span><a href="#contact" class="text-link">View concept <span>↗</span></a></div>
+          <div class="project-info"><p data-i18n="proj_c_type">03 / CREATIVE PLATFORM</p><h3 data-i18n="proj_c_title">Project Orbit</h3><span data-i18n="proj_c_meta">Identity · Design · Digital</span><a href="#contact" class="text-link"><span data-i18n="view_concept">View concept</span> <span>↗</span></a></div>
         </article>
       </div>
     </section>
@@ -158,25 +159,25 @@
 
     <section class="quote section">
       <div class="quote-inner reveal">
-        <p class="eyebrow">OUR PHILOSOPHY</p>
-        <blockquote>“Don't follow the future.<br><em>Create it.</em>”</blockquote>
+        <p class="eyebrow" data-i18n="philosophy">OUR PHILOSOPHY</p>
+        <blockquote data-i18n="quote">“Don't follow the future.<br><em>Create it.</em>”</blockquote>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <div class="contact-copy reveal">
         <div class="section-index">04</div>
-        <p class="eyebrow">LET'S TALK</p>
-        <h2>Have an idea?<br><em>Let's make it happen.</em></h2>
-        <p>Tell us what you're imagining. The first step is simply starting the conversation.</p>
+        <p class="eyebrow" data-i18n="lets_talk">LET'S TALK</p>
+        <h2 data-i18n="contact_title">Have an idea?<br><em>Let's make it happen.</em></h2>
+        <p data-i18n="contact_text">Tell us what you're imagining. The first step is simply starting the conversation.</p>
         <div class="contact-orbit" aria-hidden="true"><span>✦</span></div>
       </div>
 
       <form class="contact-form reveal" id="contactForm">
-        <label>Name<input type="text" name="name" placeholder="Your name" required></label>
-        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
-        <label>Message<textarea name="message" rows="5" placeholder="Tell us about your idea..." required></textarea></label>
-        <button class="button primary" type="submit">Send message <span>↗</span></button>
+        <label><span data-i18n="form_name_label">Name</span><input type="text" name="name" placeholder="Your name" data-i18n-placeholder="form_name_placeholder" required></label>
+        <label><span data-i18n="form_email_label">Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
+        <label><span data-i18n="form_message_label">Message</span><textarea name="message" rows="5" placeholder="Tell us about your idea..." data-i18n-placeholder="form_message_placeholder" required></textarea></label>
+        <button class="button primary" type="submit"><span data-i18n="send">Send message</span> <span>↗</span></button>
         <p class="form-status" aria-live="polite"></p>
       </form>
     </section>
@@ -185,11 +186,11 @@
   <footer>
     <div class="footer-top">
       <a class="logo" href="#top"><span class="logo-mark">✦</span><span>BIG <b>BANG</b></span></a>
-      <a href="#home" class="back-top">Back to top ↑</a>
+      <a href="#home" class="back-top" data-i18n="back_top">Back to top ↑</a>
     </div>
     <div class="footer-bottom">
-      <p>Ideas that change everything.</p>
-      <p>© <span id="year"></span> BIG BANG. All rights reserved.</p>
+      <p data-i18n="footer_tag">Ideas that change everything.</p>
+      <p data-i18n="footer_copy">© <span id="year"></span> BIG BANG. All rights reserved.</p>
     </div>
   </footer>
 
