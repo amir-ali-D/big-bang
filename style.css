@@ -55,6 +55,78 @@ footer{border-top:1px solid var(--line);width:min(var(--max),90%);margin:auto;pa
   .hero{grid-template-columns:1fr;gap:15px;padding-top:125px}.hero-visual{height:430px;order:-1}.hero-copy{text-align:center}.hero-kicker,.hero-actions,.hero-meta{justify-content:center}.hero-text{margin:auto}.scroll-cue{left:50%;transform:translateX(-50%);white-space:nowrap}.about-content,.contact{grid-template-columns:1fr;gap:45px}.service-grid{grid-template-columns:1fr 1fr}.project-card{grid-template-columns:1fr}.project-art{min-height:310px}.project-info{padding:38px}.contact-form{padding:25px}
 }
 @media(max-width:560px){
-  .section{width:min(91%,420px);padding:95px 0}.site-header{height:72px}.nav{top:67px}.hero{min-height:100svh;padding-top:105px;padding-bottom:80px}.hero-visual{height:320px;transform:none;margin:0}.hero-visual:before{width:230px;height:230px}.core{width:150px;height:150px}.core span{font-size:29px}.orbit-one{width:275px;height:135px}.orbit-two{width:350px;height:180px}.orbit-three{width:230px;height:350px}.floating-tag{font-size:7px;padding:7px 9px}.tag-one{right:2%;top:20%}.tag-two{left:0;bottom:17%}.tag-three{right:0;top:54%}.visual-label{font-size:7px}.label-top{left:2%;top:13%}.label-bottom{right:2%;bottom:13%}.hero h1{font-size:clamp(48px,15vw,64px);margin:22px 0 18px}.hero-text{font-size:13px;line-height:1.65}.hero-actions{flex-direction:column;width:min(100%,290px);margin:28px auto 0}.button{width:100%}.hero-meta{gap:7px;font-size:7px;margin-top:25px}.hero-meta i{width:2px;height:2px}.section-heading{grid-template-columns:38px 1fr;gap:13px;margin-bottom:45px}.section-index{font-size:8px}.eyebrow{font-size:8px}.section-heading h2{font-size:48px;margin-top:16px}.about-content{gap:35px}.lead{font-size:25px}.about-side{padding-top:20px}.stats{grid-template-columns:1fr 1fr;margin-top:55px}.stat{padding:22px 8px 17px 0}.stat strong{font-size:36px}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:335px;padding:25px;text-align:center;align-items:center}.card-top{width:100%}.card-body{margin-bottom:48px}.service-card h3{font-size:25px}.service-card p{font-size:12px}.card-link{left:50%;transform:translateX(-50%);white-space:nowrap}.card-link:hover{transform:translateX(calc(-50% + 4px))}.project-art{min-height:260px}.project-info{padding:30px;text-align:center;align-items:center}.project-info h3{font-size:35px}.project-info .text-link{align-self:center}.quote{min-height:65vh}.quote blockquote{font-size:43px}.contact h2{font-size:43px}.contact-form{padding:20px}.footer-top,.footer-bottom{flex-direction:column;align-items:flex-start}.back-top{margin-top:4px}.cursor-glow{display:none}
+  .section{width:min(91%,420px);padding:88px 0}
+  .site-header{height:72px;padding:0 5%}
+  .logo{font-size:18px}
+  .logo-mark{font-size:22px}
+  .nav{top:67px;left:5%;right:5%;padding:12px;border-radius:18px;align-items:center}
+  .nav a{width:100%;padding:14px 12px;text-align:center;font-size:14px}
+  .nav a:not(.nav-cta){display:flex;align-items:center;justify-content:center}
+  .nav-cta{margin-top:7px;text-align:center}
+
+  .hero{min-height:100svh;padding-top:100px;padding-bottom:78px;gap:8px}
+  .hero-visual{height:305px;transform:none;margin:0;order:-1}
+  .hero-visual:before{width:225px;height:225px}
+  .core{width:145px;height:145px}
+  .core span{font-size:28px}
+  .orbit-one{width:270px;height:132px}
+  .orbit-two{width:335px;height:175px}
+  .orbit-three{width:220px;height:335px}
+  .floating-tag{font-size:7px;padding:7px 9px}
+  .tag-one{right:1%;top:19%}.tag-two{left:0;bottom:16%}.tag-three{right:0;top:54%}
+  .visual-label{font-size:7px}.label-top{left:1%;top:12%}.label-bottom{right:1%;bottom:12%}
+  .hero-copy{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .hero-kicker{justify-content:center;text-align:center;font-size:8px}
+  .hero h1{font-size:clamp(48px,15vw,64px);margin:20px 0 17px;line-height:.95}
+  .hero-text{font-size:13px;line-height:1.65;max-width:340px;text-align:center}
+  .hero-actions{flex-direction:column;width:min(100%,290px);margin:26px auto 0}
+  .button{width:100%}
+  .hero-meta{gap:7px;font-size:7px;margin-top:23px;justify-content:center}
+  .hero-meta i{width:2px;height:2px}
+
+  /* Mobile section headings: keep the number subtle, but center the actual heading block. */
+  .section-heading{display:block;text-align:center;margin-bottom:42px}
+  .section-heading > div:last-child{display:flex;flex-direction:column;align-items:center}
+  .section-index{display:inline-block;font-size:8px;padding-top:0;padding-bottom:7px;border-top:0;border-bottom:1px solid var(--line);max-width:none;letter-spacing:.2em}
+  .eyebrow{font-size:8px;text-align:center}
+  .section-heading h2{font-size:48px;margin-top:14px;text-align:center}
+
+  /* About: centered text and centered stats. */
+  .about-content{display:block;text-align:center}
+  .lead{font-size:25px;line-height:1.28;text-align:center;max-width:380px;margin:0 auto}
+  .about-side{padding-top:22px;margin-top:30px;text-align:center}
+  .about-side p{font-size:13px;line-height:1.8;max-width:360px;margin:0 auto}
+  .about-side .text-link{justify-content:center;margin-top:24px}
+  .stats{grid-template-columns:1fr 1fr;margin-top:48px;text-align:center;border-top:1px solid var(--line)}
+  .stat{padding:24px 6px 18px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;align-items:center}
+  .stat strong{font-size:38px}
+  .stat span{font-size:10px;margin-top:8px}
+
+  /* Services: larger titles, positioned higher, cleaner cards. */
+  .service-grid{grid-template-columns:1fr;gap:14px}
+  .service-card{min-height:325px;padding:24px 22px;text-align:center;align-items:center;justify-content:flex-start}
+  .card-top{width:100%;flex:none}
+  .service-icon{font-size:44px;line-height:1;margin-top:2px}
+  .card-body{margin-top:42px;margin-bottom:0;max-width:330px}
+  .service-card h3{font-size:31px;line-height:1.05;margin-bottom:12px}
+  .service-card p{font-size:12px;line-height:1.7;max-width:320px;margin:0 auto}
+  .card-link{left:50%;bottom:24px;transform:translateX(-50%);font-size:11px;white-space:nowrap}
+  .card-link:hover{transform:translateX(calc(-50% + 4px))}
+
+  .project-art{min-height:260px}
+  .project-info{padding:30px;text-align:center;align-items:center}
+  .project-info h3{font-size:35px}
+  .project-info .text-link{align-self:center}
+  .quote{min-height:65vh}
+  .quote blockquote{font-size:43px}
+  .contact{text-align:center}
+  .contact h2{font-size:43px}
+  .contact-copy>p:last-of-type{margin-left:auto;margin-right:auto}
+  .contact-orbit{margin:38px auto 0}
+  .contact-form{padding:20px;text-align:left}
+  footer{width:min(91%,420px)}
+  .footer-top,.footer-bottom{flex-direction:column;align-items:center;text-align:center}
+  .back-top{margin-top:4px}
+  .cursor-glow{display:none}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
