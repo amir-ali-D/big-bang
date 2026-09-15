@@ -3,6 +3,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const glow = document.querySelector('.cursor-glow');
 const langToggle = document.getElementById('langToggle');
+const flagFA = langToggle ? langToggle.querySelector('.flag-fa') : null;
+const flagUS = langToggle ? langToggle.querySelector('.flag-us') : null;
 
 const translations = {
   en: {
@@ -75,15 +77,24 @@ function setLanguage(lang) {
   if (desc) desc.content = lang === 'fa' ? 'بیگ بنگ — فناوری، خلاقیت و نوآوری.' : 'BIG BANG — Technology, creativity and innovation.';
 
   if (langToggle) {
-    langToggle.textContent = lang === 'fa' ? 'EN' : 'FA';
-    langToggle.setAttribute('aria-label', lang === 'fa' ? 'Switch to English language' : 'Switch to Persian language');
+    const isFa = lang === 'fa';
+    if (flagFA) flagFA.hidden = isFa;
+    if (flagUS) flagUS.hidden = !isFa;
+    langToggle.setAttribute('aria-label', isFa ? 'Switch to English language' : 'Switch to Persian language');
+    langToggle.setAttribute('title', isFa ? 'English' : 'فارسی');
   }
   localStorage.setItem('bigbang-language', lang);
 }
 
 const savedLang = localStorage.getItem('bigbang-language') || 'en';
 setLanguage(savedLang);
-if (langToggle) langToggle.addEventListener('click', () => setLanguage(document.documentElement.lang === 'fa' ? 'en' : 'fa'));
+if (langToggle) {
+  langToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setLanguage(document.documentElement.lang === 'fa' ? 'en' : 'fa');
+  });
+}
 
 const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 18);
 updateHeader();
